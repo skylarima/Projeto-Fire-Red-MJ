@@ -1,11 +1,9 @@
 [gd_scene format=3 uid="uid://bcak7rlsgbokt"]
 
-[node name="Node2D" type="Node2D" unique_id=1259828295]
+[ext_resource type="Script" uid="uid://ckvfbtg4q8xnv" path="res://batalha.gd" id="1_d20q3"]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=2058739370]
-offset_right = 1154.0
-offset_bottom = 543.0
-color = Color(0, 0, 0, 1)
+[node name="Node2D" type="Node2D" unique_id=1259828295]
+script = ExtResource("1_d20q3")
 
 [node name="Label" type="Label" parent="." unique_id=1547752578]
 offset_left = 344.0
@@ -15,3 +13,45 @@ offset_bottom = 281.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
 text = "BATALHAAAAAAAA"
+
+[node name="PokemonJogador" type="Panel" parent="." unique_id=1144100786]
+offset_left = 734.0
+offset_top = 390.0
+offset_right = 1130.0
+offset_bottom = 560.0
+
+[node name="especie" type="Label" parent="PokemonJogador" unique_id=44004107]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 8.0
+offset_right = 227.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 21
+text = "Pokemon Jogador"
+
+[node name="Nivel" type="Label" parent="PokemonJogador" unique_id=1286724392]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 10.0
+offset_right = 396.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 18
+text = "Nv 0"
+
+[node name="Tipo" type="Label" parent="PokemonJogador" unique_id=1761678806]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 35.0
+offset_right = 193.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 18
+text = "Normal"
+
+[node name="Vida" type="Label" parent="PokemonJogador" unique_id=387067115]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 70.0
+offset_right = 192.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 22
+text = "HP: 167"

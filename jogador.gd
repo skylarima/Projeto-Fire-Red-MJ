@@ -9,6 +9,7 @@ var movendo = false
 @export var grade_fase : TileMapLayer
 var posicao_grid = Vector2i.ZERO
 
+
 func _ready() -> void:
 	posicao_grid = grade_fase.local_to_map(position)
 	position = grade_fase.map_to_local(posicao_grid)

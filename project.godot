@@ -14,6 +14,17 @@ config/name="Projeto fanmade pokemon"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+Global="*uid://c5jlx4vgg1fa6"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "red",
+"res://scritp/": "blue"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
