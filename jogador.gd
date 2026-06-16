@@ -63,6 +63,8 @@ func entrar_em_batalha():
 	var numero_aleatorio = randi_range(1,100)
 	
 	if numero_aleatorio <= 11:
+		var pokemon_oponente = get_parent().pokemons.pick()
+		Global.pokemon_oponente = pokemon_oponente
 		get_tree().change_scene_to_file("res://batalha.tscn")
 	else:
 		print("nao entrou em batalha")

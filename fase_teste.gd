@@ -1,4 +1,6 @@
-extends Node
+extends Node2D
+
+
 
 var pokemon_jogador = {
 	"Especie": "Balu",
@@ -8,7 +10,3 @@ var pokemon_jogador = {
 	"Vida": 167,
 	"Nivel": 1
 }
-
-
-
-var Global_pokemon_oponente = null
